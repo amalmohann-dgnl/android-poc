@@ -2,6 +2,7 @@
 package com.reactpoclibrary;
 
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
@@ -19,7 +20,7 @@ public class RNAndroidPocModule extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void changeImage(String image) {
-    Toast.makeText(context, image, Toast.LENGTH_LONG).show();
+    Toast.makeText(this.reactContext, image, Toast.LENGTH_LONG).show();
     if (image.equals("image1")) {
       mImageView.setImageResource(R.drawable.image1);
     } else if (image.equals("image2")) {
