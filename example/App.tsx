@@ -21,7 +21,7 @@ import {
   LearnMoreLinks,
 } from 'react-native/Libraries/NewAppScreen';
 
-import RNAndroidPoc from '../PocModule';
+import RNAndroidPoc from 'react-native-android-poc';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
