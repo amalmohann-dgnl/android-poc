@@ -6159,7 +6159,7 @@ react-is@^17.0.1:
 
 "react-native-android-poc@https://github.com/amalmohann-dgnl/android-poc":
   version "1.0.0"
-  resolved "https://github.com/amalmohann-dgnl/android-poc#b83c50c48dd531ce0d9aaa8fc0828b2caee7e54f"
+  resolved "https://github.com/amalmohann-dgnl/android-poc#36bb2e4e15a462aca9664f4dd052e52a1c5efa2d"
   dependencies:
     react-native "0.70.6"
 

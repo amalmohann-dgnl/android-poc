@@ -17,6 +17,7 @@ import {
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
+// Native Module and Native Components
 import RNAndroidPoc from 'react-native-android-poc';
 
 function App(): JSX.Element {
