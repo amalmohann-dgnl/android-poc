@@ -7,19 +7,15 @@
 
 import React from 'react';
 import {
+  Button,
   SafeAreaView,
   ScrollView,
   StatusBar,
-  StyleSheet,
   useColorScheme,
   View,
 } from 'react-native';
 
-import {
-  Colors,
-  Header,
-  LearnMoreLinks,
-} from 'react-native/Libraries/NewAppScreen';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 import RNAndroidPoc from 'react-native-android-poc';
 
@@ -30,7 +26,7 @@ function App(): JSX.Element {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
-  RNAndroidPoc.changeImage('image2');
+  const onPress = () => RNAndroidPoc.changeImage('image2');
 
   return (
     <SafeAreaView style={backgroundStyle}>
@@ -41,35 +37,19 @@ function App(): JSX.Element {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-        <Header />
         <View
+          // eslint-disable-next-line react-native/no-inline-styles
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
+            flex: 1,
+            justifyContent: 'center',
+            alignItems: 'center',
           }}>
-          <LearnMoreLinks />
+          <Button title="click me" onPress={onPress} />
         </View>
       </ScrollView>
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
 
 export default App;
