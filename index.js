@@ -1,6 +1,7 @@
 import { NativeModules } from "react-native";
-import ImageView from "./ImageView";
+import POCImageView from "./ImageView";
 
 const { RNAndroidPoc } = NativeModules;
 
-export { RNAndroidPoc as default, ImageView };
+export { POCImageView };
+export { RNAndroidPoc as default };
