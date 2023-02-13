@@ -18,7 +18,7 @@ import {
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 // Native Module and Native Components
-import RNAndroidPoc from 'react-native-android-poc';
+import RNAndroidPoc, {POCImageView} from 'react-native-android-poc';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -47,6 +47,7 @@ function App(): JSX.Element {
             alignItems: 'center',
           }}>
           <Button title="click me" onPress={onPress} />
+          <ImageView />
         </View>
       </ScrollView>
     </SafeAreaView>
