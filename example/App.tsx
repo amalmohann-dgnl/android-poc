@@ -47,7 +47,7 @@ function App(): JSX.Element {
             alignItems: 'center',
           }}>
           <Button title="click me" onPress={onPress} />
-          <ImageView />
+          <POCImageView />
         </View>
       </ScrollView>
     </SafeAreaView>
